@@ -1,0 +1,6 @@
+.pagination {
+    padding-bottom: 20px;
+    :global(.ant-pagination-item-active a) {
+        color: #FFFFFF;
+    }
+}

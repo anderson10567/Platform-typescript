@@ -1,0 +1,141 @@
+.article-section {
+    width: 940px;
+    min-height: calc(100vh - 172px);
+    background-color: #FFFFFF;
+    margin: 26px auto 64px auto;
+    box-sizing: border-box;
+    padding: 10px 5px;
+    box-shadow: 0px 4px 12px 0px #00000026;
+}
+.article {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    background-color: #FFFFFF;
+    &__text-section {
+        width: 78%;
+        padding: 14px;
+    }
+    &__author-section {
+        width: 22%;
+        height: auto;
+        padding: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10px;
+    }
+    &__header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        column-gap: 13px;
+    }
+    &__title {
+        font-family: 'Inter';
+        font-size: 20px;
+        display: block;
+        color: #1890FF;
+    }
+    &__likes-section {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        border: none;
+        background-color: inherit;
+        cursor: pointer;
+    }
+    &__like {
+        display: block;
+        width: 16px;
+        height: 16px;
+        // background-image: url('../../images/heart.png');
+    }
+    &__count {
+        font-size: 12px;
+        display: block;
+    }
+    &__tags-section {
+        font-family: 'Inter';
+        margin-top: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 24px;
+        overflow: hidden;
+        opacity: 0.5;
+    }
+    &__article-text {
+        margin-top: 6px;
+        font-family: 'Inter';
+        font-size: 12px;
+        line-height: 22px;
+        overflow: hidden;
+        opacity: 0.75;
+    }
+    &__name-date-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        column-gap: 6px;
+    }
+    &__author-name {
+        font-size: 18px;
+    }
+    &__date-of-creation {
+        font-size: 12px;
+        color: #000000;
+        opacity: 0.5;
+    }
+    &__author-avatar {
+        width: 46px;
+        height: 46px;
+        object-fit: cover;
+        border-radius: 50%;
+    }
+    &__button {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        background-color: inherit;
+        box-sizing: border-box;
+    }
+    &__delete-button {
+        width: 78px;
+        height: 32px;
+        background-color: inherit;
+        box-sizing: border-box;
+        border: 1px solid #F5222D;
+        border-radius: 5px;
+        color: #F5222D;
+        cursor: pointer;
+        &:hover {
+            background-color: #de0c0c; 
+            color: white; 
+            }
+    }
+    &__edit-button {
+        width: 78px;
+        height: 32px;
+        background-color: inherit;
+        box-sizing: border-box;
+        border: 1px solid #52C41A;
+        border-radius: 5px;
+        color: #52C41A;
+        cursor: pointer;
+        &:hover {
+            background-color: #52C41A; 
+            color: white; 
+            }
+    }
+    :global(.ant-typography code) {
+        font-family: 'Inter'!important; 
+    }
+}
+.article-body {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 14px;
+    font-family: 'Inter';
+}

@@ -1,0 +1,13 @@
+.articles {
+    margin: 0 auto;
+}
+
+.articles-list {
+    padding: 26px 0;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 26px;
+    margin: 0 auto;
+    min-height: auto;
+}
